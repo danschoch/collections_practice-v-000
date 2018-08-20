@@ -29,4 +29,5 @@ def kesha_maker (array)
 end
 
 def find_a (array)
-  array.select {|string| string.first = "a"}
+  array.select {|string| string[0] = "a"}
+end
