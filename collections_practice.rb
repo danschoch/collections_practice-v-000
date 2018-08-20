@@ -44,4 +44,5 @@ def add_s(array)
       item + "s"
     end
   end
+  array
 end
