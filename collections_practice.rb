@@ -37,7 +37,11 @@ def sum_array (array)
 end
 
 def add_s(array)
-  array.each_with_index.collect{|item, index| item + "s"}
-  array[1] = array[1].pop
-  array
+  array.each_with_index.collect do |item, index|
+    if item = array[1]
+      item
+    else
+      item + "s"
+    end
+  end
 end
